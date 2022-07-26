@@ -79,10 +79,12 @@
     * [Gaussian Elimination](https://github.com/bellshade/Python/blob/main/algorithm/arithmetic_analysis/gaussian_elimination.py)
     * [In Static Equilibrium](https://github.com/bellshade/Python/blob/main/algorithm/arithmetic_analysis/in_static_equilibrium.py)
     * [Intersection](https://github.com/bellshade/Python/blob/main/algorithm/arithmetic_analysis/intersection.py)
+    * [Jacobi Iteration Method](https://github.com/bellshade/Python/blob/main/algorithm/arithmetic_analysis/jacobi_iteration_method.py)
     * [Lu Decomposition](https://github.com/bellshade/Python/blob/main/algorithm/arithmetic_analysis/lu_decomposition.py)
     * [Newton Forward Interpolation](https://github.com/bellshade/Python/blob/main/algorithm/arithmetic_analysis/newton_forward_interpolation.py)
     * [Newton Method](https://github.com/bellshade/Python/blob/main/algorithm/arithmetic_analysis/newton_method.py)
     * [Newton Raphson](https://github.com/bellshade/Python/blob/main/algorithm/arithmetic_analysis/newton_raphson.py)
+    * [Rootsearch](https://github.com/bellshade/Python/blob/main/algorithm/arithmetic_analysis/rootsearch.py)
     * [Secant Method](https://github.com/bellshade/Python/blob/main/algorithm/arithmetic_analysis/secant_method.py)
   * Backtracking
     * [Coloring](https://github.com/bellshade/Python/blob/main/algorithm/backtracking/coloring.py)
@@ -136,7 +138,12 @@
     * [Binary Search](https://github.com/bellshade/Python/blob/main/algorithm/searching/binary_search.py)
     * [Linear Search](https://github.com/bellshade/Python/blob/main/algorithm/searching/linear_search.py)
   * Sorting
+    * [Bubble Sort](https://github.com/bellshade/Python/blob/main/algorithm/sorting/bubble_sort.py)
+    * [Bubble Sort Ascii](https://github.com/bellshade/Python/blob/main/algorithm/sorting/bubble_sort_ascii.py)
     * [Pop Sort](https://github.com/bellshade/Python/blob/main/algorithm/sorting/pop_sort.py)
+
+## Algoritma Genetika
+  * [Basic String](https://github.com/bellshade/Python/blob/main/algoritma_genetika/basic_string.py)
 
 ## Implementation
   * Blockchain
@@ -163,6 +170,8 @@
     * [Burrows Wheeler](https://github.com/bellshade/Python/blob/main/implementation/compression/burrows_wheeler.py)
     * [Huffman](https://github.com/bellshade/Python/blob/main/implementation/compression/huffman.py)
     * [Lempel Ziv](https://github.com/bellshade/Python/blob/main/implementation/compression/lempel_ziv.py)
+  * Computer Vision
+    * [Klasifikasi Cnn](https://github.com/bellshade/Python/blob/main/implementation/computer_vision/klasifikasi_cnn.py)
   * Electro
     * Conversion
       * [Binary To Decimal](https://github.com/bellshade/Python/blob/main/implementation/electro/conversion/binary_to_decimal.py)
@@ -173,6 +182,8 @@
   * File Transfer
     * [Receive File](https://github.com/bellshade/Python/blob/main/implementation/file_transfer/receive_file.py)
     * [Send File](https://github.com/bellshade/Python/blob/main/implementation/file_transfer/send_file.py)
+  * Finansial
+    * [Angsuran](https://github.com/bellshade/Python/blob/main/implementation/finansial/angsuran.py)
   * Fractal
     * [Koch](https://github.com/bellshade/Python/blob/main/implementation/fractal/koch.py)
     * [Mandelbrot](https://github.com/bellshade/Python/blob/main/implementation/fractal/mandelbrot.py)
@@ -180,6 +191,8 @@
   * Geodesy Egineering
     * [Ellipsodial Distance](https://github.com/bellshade/Python/blob/main/implementation/geodesy_egineering/ellipsodial_distance.py)
     * [Haversine](https://github.com/bellshade/Python/blob/main/implementation/geodesy_egineering/haversine.py)
+  * Graphic
+    * [Bezier Curve](https://github.com/bellshade/Python/blob/main/implementation/graphic/bezier_curve.py)
   * Linear Algebra
     * [Conjugate Gradient](https://github.com/bellshade/Python/blob/main/implementation/linear_algebra/conjugate_gradient.py)
     * [Polynom For Point](https://github.com/bellshade/Python/blob/main/implementation/linear_algebra/polynom_for_point.py)
@@ -199,9 +212,12 @@
   * [Geometric Sum](https://github.com/bellshade/Python/blob/main/math/geometric_sum.py)
   * [Intergration](https://github.com/bellshade/Python/blob/main/math/intergration.py)
   * [Is Prime](https://github.com/bellshade/Python/blob/main/math/is_prime.py)
+  * [Iteration Power](https://github.com/bellshade/Python/blob/main/math/iteration_power.py)
   * [Jumlah Deret Geomteri](https://github.com/bellshade/Python/blob/main/math/jumlah_deret_geomteri.py)
   * [Midpoint](https://github.com/bellshade/Python/blob/main/math/midpoint.py)
+  * [Pascal Triangle](https://github.com/bellshade/Python/blob/main/math/pascal_triangle.py)
   * [Persamaan Kuadarat Bilangan Kompleks](https://github.com/bellshade/Python/blob/main/math/persamaan_kuadarat_bilangan_kompleks.py)
+  * [Prime Number Library](https://github.com/bellshade/Python/blob/main/math/prime_number_library.py)
   * [Proth Number](https://github.com/bellshade/Python/blob/main/math/proth_number.py)
   * [Qr Decomposition](https://github.com/bellshade/Python/blob/main/math/qr_decomposition.py)
   * [Radian](https://github.com/bellshade/Python/blob/main/math/radian.py)
@@ -249,15 +265,30 @@
   * [Is Palindrom](https://github.com/bellshade/Python/blob/main/other/is_palindrom.py)
   * [Power Dac](https://github.com/bellshade/Python/blob/main/other/power_dac.py)
   * [Rgb To Hex](https://github.com/bellshade/Python/blob/main/other/rgb_to_hex.py)
+  * [Strong Password Check](https://github.com/bellshade/Python/blob/main/other/strong_password_check.py)
   * [Tower Of Hanoi](https://github.com/bellshade/Python/blob/main/other/tower_of_hanoi.py)
+  * Turtle
+    * [Logo Apple](https://github.com/bellshade/Python/blob/main/other/turtle/logo_apple.py)
+
+## Regular Expression
+  * 00 Pengenalan Regex
+    * [Contoh Regex](https://github.com/bellshade/Python/blob/main/regular_expression/00_pengenalan_regex/contoh_regex.py)
 
 ## Struktur Data
-  * [Binary Search Tree](https://github.com/bellshade/Python/blob/main/struktur_data/binary_search_tree.py)
   * [Doubly Linked List](https://github.com/bellshade/Python/blob/main/struktur_data/doubly_linked_list.py)
   * [Singly Linked List](https://github.com/bellshade/Python/blob/main/struktur_data/singly_linked_list.py)
+  * Stack
+    * [Stack List](https://github.com/bellshade/Python/blob/main/struktur_data/stack/stack_list.py)
+  * Tree
+    * Avl Tree
+      * [Avl Tree](https://github.com/bellshade/Python/blob/main/struktur_data/tree/avl_tree/avl_tree.py)
+    * Binary Search Tree
+      * [Binary Search Tree](https://github.com/bellshade/Python/blob/main/struktur_data/tree/binary_search_tree/binary_search_tree.py)
 
 ## Web Programming
   * [Breadcrumb Generator](https://github.com/bellshade/Python/blob/main/web_programming/breadcrumb_generator.py)
+  * [Covid Stat Xpath](https://github.com/bellshade/Python/blob/main/web_programming/covid_stat_xpath.py)
+  * [Emisi Co2](https://github.com/bellshade/Python/blob/main/web_programming/emisi_co2.py)
   * [Get Random Quote](https://github.com/bellshade/Python/blob/main/web_programming/get_random_quote.py)
   * [Pagination Helper](https://github.com/bellshade/Python/blob/main/web_programming/pagination_helper.py)
   * [Statik Corona](https://github.com/bellshade/Python/blob/main/web_programming/statik_corona.py)

@@ -1,6 +1,3 @@
-from typing import Tuple
-
-
 def modular_division(a: int, b: int, n: int) -> int:
     """
     Algoritma yang efisien untuk membagi b dengan modulo n.
@@ -48,7 +45,7 @@ def modular_division2(a: int, b: int, n: int) -> int:
     return x
 
 
-def extended_gcd(a: int, b: int) -> Tuple[int, int, int]:
+def extended_gcd(a: int, b: int) -> tuple[int, int, int]:
     """
     Extended Euclid's Algorithm :
     Jika d membagi a dan b dan d = a*x + b*y untuk bilangan bulat x
@@ -74,7 +71,7 @@ def extended_gcd(a: int, b: int) -> Tuple[int, int, int]:
     return (d, x, y)
 
 
-def extended_euclid(a: int, b: int) -> Tuple[int, int]:
+def extended_euclid(a: int, b: int) -> tuple[int, int]:
     """
     >>> extended_euclid(10, 6)
     (-1, 2)

@@ -8,7 +8,7 @@
   <img alt="badge lgtm" src="https://img.shields.io/lgtm/grade/python/github/bellshade/Python?label=code%20quality&logo=LGTM&style=for-the-badge">
   <img alt="badge codefactor" src="https://img.shields.io/codefactor/grade/github/bellshade/Python/main?label=codefactor%20grade&logo=codefactor&style=for-the-badge">
   <img alt="badge unitesting github"src="https://img.shields.io/github/workflow/status/bellshade/python/python%20testing?logo=github&style=for-the-badge">
-  <img alt="badge circle ci" src="https://img.shields.io/circleci/build/github/bellshade/Python/main?label=circle%20ci&logo=circle&logoColor=white&style=for-the-badge"><br>
+  <br>
   <img src="https://64.media.tumblr.com/c70e8fcdf61a132a873f99db163896a2/tumblr_o48ggtdpJA1sfmahro1_400.gifv" width=300 height=200> <br>
 </p>
 
@@ -64,11 +64,12 @@ Untuk sekarang, mulai saja dulu dengan [Object Oriented Programming](object_orie
 
 ## 🎓 Topik Lanjutan 🎓
 
-Jika kalian sudah menguasai dasar - dasar pemograman beserta dengan paradigma _Object Oriented Programming_, kalian bisa langsung mengeksplorasi topik - topik lain yang jauh lebih menantang dan tidak kalah seru. Di repositori ini, kami telah menyiapkan beberapa topik yang mungkin kamu suka. 
+Jika kalian sudah menguasai dasar - dasar pemograman beserta dengan paradigma _Object Oriented Programming_, kalian bisa langsung mengeksplorasi topik - topik lain yang jauh lebih menantang dan tidak kalah seru. Di repositori ini, kami telah menyiapkan beberapa topik yang mungkin kamu suka.
 
-01. [Algoritma Struktur Data](/algorithm) 
+01. [Struktur Data](/struktur_data)
 
 02. [Web Programming](/web_programming)
+
 
 ## ⚡ Quick Access ⚡
 
@@ -77,6 +78,15 @@ Semua _script_ yang ada pada repositori ini, dapat diakses dengan cepat lewat li
 - [Basic](Basic/README.md)
 - [Algoritma](algorithm)
 - [Implementasi](implementation)
+  - [Blockchain](implementation/blockchain)
+  - [Celular automata](implementation/celular_automata)
+  - [Chiper](implementation/chiper)
+  - [Compression](implementation/compression)
+  - [Electro](implementation/electro)
+  - [File transfer](implementation/file_transfer)
+  - [Fractal](implementation/fractal)
+  - [Geodesy](implementation/geodesy_programming)
+  - [Physics](implementation/physics)
 - [Web Programming](web_programming)
 - [Implementasi Matematika](math)
 

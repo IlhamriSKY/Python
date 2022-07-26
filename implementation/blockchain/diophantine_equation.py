@@ -1,9 +1,7 @@
 # https://en.wikipedia.org/wiki/Diophantine_equation
 
-from typing import Tuple
 
-
-def diophantine(a: int, b: int, c: int) -> Tuple[float, float]:
+def diophantine(a: int, b: int, c: int) -> tuple[float, float]:
     """
     Persamaan Diophantine : Diberikan bilangan bulat a,b,c
     ( setidaknya satu dari a dan b != 0),
@@ -69,7 +67,7 @@ def greatest_common_divisor(a: int, b: int) -> int:
     return b
 
 
-def extended_gcd(a: int, b: int) -> Tuple[int, int, int]:
+def extended_gcd(a: int, b: int) -> tuple[int, int, int]:
     """
     Extended Euclid's Algorithm :
     Jika d membagi a dan b dan d = a*x + b*y untuk bilangan bulat

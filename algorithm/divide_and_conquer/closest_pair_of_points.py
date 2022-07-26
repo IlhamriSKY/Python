@@ -9,9 +9,6 @@
 # time complexity: O(n * log n)
 
 
-from typing import List
-
-
 def euclidan_distance_sqr(point1, point2):
     """
     >>> euclidan_distance_sqr([1, 2], [2, 4])
@@ -20,7 +17,7 @@ def euclidan_distance_sqr(point1, point2):
     return (point1[0] - point2[0]) ** 2 + (point1[1] - point2[1]) ** 2
 
 
-def column_based_sort(array, column) -> List[tuple]:
+def column_based_sort(array, column) -> list[tuple]:
     """
     >>> column_based_sort([(5, 1), (4, 2), (3, 0)], 1)
     [(3, 0), (5, 1), (4, 2)]

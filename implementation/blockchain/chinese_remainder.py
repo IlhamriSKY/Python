@@ -2,10 +2,8 @@
 # untuk mempercepat dan meningkatkan efisiensi performa sistem kriptografi RSA
 # https://en.wikipedia.org/wiki/Chinese_remainder_theorem
 
-from typing import Tuple
 
-
-def extended_euclid(a: int, b: int) -> Tuple[int, int]:
+def extended_euclid(a: int, b: int) -> tuple[int, int]:
     """
     >>> extended_euclid(10, 6)
     (-1, 2)

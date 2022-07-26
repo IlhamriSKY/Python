@@ -7,8 +7,6 @@ name: python testing
 on:
   # target dari branch yang akan di pull request
   # atau di commit langsung
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -21,10 +19,14 @@ jobs:
       # menggunakan checkout untuk cek kode
     - uses: actions/checkout@v2
       # menggunakan environment python versi 3.9
-    - name: Set up Python 3.9
+    - name: Set up Python 3.10
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: "3.10"
+    - uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt')}}
       # testing bash dengan perintah echo
     - name: salam
       run: |
@@ -56,8 +58,8 @@ jobs:
     - name: Push perubahan
       if: steps.git-check.outputs.modified == 'ya' && github.event_name == 'push'
       run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+        git config --global user.name 'bellshadebot'
+        git config --global user.email 'bellshade07@gmail.com'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git pull
         git commit -am "style: format otomatis dengan black dan isort"
@@ -67,7 +69,7 @@ jobs:
     - name: Test Python
       run: |
         echo "Mulai Jalankan testing docstring"
-        pytest . --doctest-modules --ignore=Basic/
+        pytest . --doctest-modules --ignore=Basic/ --cov-report=term-missing:skip-covered
       # test lint python jika black gagal reformat kode
     - name: Test Lint Python
       run: |
@@ -76,18 +78,21 @@ jobs:
       # mypy adalah unit testing diluar dari official python
       # yang berfungsi jika mengecek kode apakah terdapat kode
       # yang bersifat tidak berguna, terlalu rumit, atau kesalahan import
+
     - name: Test mypy
-      run: |
-        echo "Mulai Jalankan testing mypy"
-        mypy .
+      run: mypy --ignore-missing-imports --install-types --non-interactive .
+      # FIXME : kendala error beberapa directory mypy
       # mulai test coverage dan menampilkan hasil presentasi scanning dari pytest
     - name: Test coverage
       run: |
         echo "Mulai testing coverage"
         coverage run --source . -m pytest --doctest-modules --ignore=Basic/
       # membuat report untuk upload ke codecoverage
-    - name: Hasil coverage
-      run: |
-        echo "Laporan coverage"
-        coverage report -m
-        
+
+    #  kendala server github tidak respon pada coverage
+    #  untuk sementara dinonaktifkan
+    # - name: Hasil coverage
+    #   run: |
+    #     echo "Laporan coverage"
+    #     coverage report -m
+

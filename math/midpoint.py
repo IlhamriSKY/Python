@@ -29,13 +29,13 @@ def midpoint(
         n = 100
         x = np.linspace(a, b, n)
         dx = x[1] - x[0]
-        L0 = sum([dx * func(i + dx / 2, *args, **kwargs) for i in x])
+        L0 = sum(dx * func(i + dx / 2, *args, **kwargs) for i in x)
         err = 1
         while err > eps:
             n += 1
             x = np.linspace(a, b, n)
             dx = x[1] - x[0]
-            L1 = sum([dx * func(i + dx / 2, *args, **kwargs) for i in x])
+            L1 = sum(dx * func(i + dx / 2, *args, **kwargs) for i in x)
             err = np.abs(L1 - L0) / np.abs(L1)
             L0 = L1
     except Exception:
@@ -49,7 +49,7 @@ if __name__ == "__main__":
         """
         Test Function
         """
-        return x ** 3
+        return x**3
 
     print(midpoint(f, 0, 1))
 

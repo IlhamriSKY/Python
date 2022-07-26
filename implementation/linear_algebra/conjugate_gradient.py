@@ -40,11 +40,11 @@ def create_spd_matrix(dimension: int) -> Any:
 
 
 def conjugate_gradient(
-    spd_matrix: np.ndarray,
-    load_vector: np.ndarray,
-    max_iterations: int = 1000,
-    tol: float = 1e-8,
-) -> Any:
+    spd_matrix,
+    load_vector,
+    max_iterations=1000,
+    tol=1e-8,
+):
     """
     return solusi linear sistem np.dot(spd_matrix, x) = b
     >>> import numpy as np
@@ -63,6 +63,7 @@ def conjugate_gradient(
     """
     assert np.shape(spd_matrix)[0] == np.shape(spd_matrix)[1]
     assert np.shape(load_vector)[0] == np.shape(spd_matrix)[0]
+    assert is_matrix_spd(spd_matrix)
 
     x0 = np.zeros((np.shape(load_vector)[0], 1))
     r0 = np.copy(load_vector)

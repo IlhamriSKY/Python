@@ -1,12 +1,9 @@
 # informasi tentang lu decomposition bisa cek disini
 # https://en.wikipedia.org/wiki/LU_decomposition
-
-from typing import Tuple
-
 import numpy as np
 
 
-def lower_upper_decomposition(table: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
+def lower_upper_decomposition(table: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     """
     contoh:
     >>> matrix = np.array([[2, -2, 1], [0, 1, 2], [5, 3, 1]])
